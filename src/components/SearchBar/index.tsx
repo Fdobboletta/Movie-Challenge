@@ -4,7 +4,7 @@ import { IProps } from './types';
 import './styles.css';
 
 const SearchBar: FC<IProps> = ({ onSubmit }: IProps) => {
-  const [value, setValue] = useState<string>('');
+  const [value, setValue] = useState<string>('')
 
   return (
     <form className="container-form">
