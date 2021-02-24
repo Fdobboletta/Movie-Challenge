@@ -1,4 +1,3 @@
-
 export interface IMovie {
   title: string;
   overview: string;
@@ -6,14 +5,14 @@ export interface IMovie {
   vote_average: number;
   popularity: number;
   vote_count: number;
-  video:boolean;
+  video: boolean;
   media_type: string;
   id: number;
   adult: boolean;
   backdrop_path: string;
   original_title: string;
-  genre_ids:number[];
-  release_date:string
+  genre_ids: number[];
+  release_date: string;
 }
 
 export interface HttpResponse<T> extends Response {

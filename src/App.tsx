@@ -7,7 +7,7 @@ import Config from './config';
 import { IMovie, IError, HttpResponse, IResponse } from './types';
 
 const App: FC = () => {
-  const [movies, setMovies] = useState<IMovie[] | undefined>(undefined);
+  const [movies, setMovies] = useState<IMovie[] | undefined>(undefined)
   const [error, setError] = useState<IError | undefined>(undefined);
   const [keyWord, setKeyWord] = useState<string>('');
 
