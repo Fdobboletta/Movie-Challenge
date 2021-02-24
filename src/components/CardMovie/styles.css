@@ -1,0 +1,118 @@
+.container-card {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.poster {
+  display: block;
+  max-height: 250px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+  border: 1px solid black;
+}
+
+.container-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.title,
+.overview {
+  margin: 0px;
+  padding: 10px 0;
+  border: 1px solid black;
+}
+
+.title {
+  flex: 1;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.overview {
+  flex: 3;
+}
+
+@media (max-width: 480px) {
+  .container-card {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 7px;
+    border: 1px solid black;
+  }
+
+  .poster {
+    flex: 1;
+    margin: 0;
+    height: 100%;
+    margin-bottom: 7px;
+    object-fit: contain;
+    border: 1px solid black;
+  }
+
+  .container-text {
+    margin-left: 0;
+  }
+
+  .title,
+  .overview {
+    margin: 0px;
+    padding: 3px 0;
+    border: 1px solid black;
+  }
+
+  .title {
+    flex: 1;
+    margin-bottom: 3px;
+    font-size: 14px;
+  }
+
+  .overview {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .container-card {
+    flex-direction: row;
+    margin-top: 15px;
+    padding: 10px;
+  }
+
+  .poster {
+    height: 100%;
+    width: auto;
+  }
+
+  .container-text {
+    margin-left: 10px;
+  }
+
+  .title,
+  .overview {
+    margin: 0px;
+    padding: 5px 0;
+  }
+
+  .title {
+    flex: 1;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+
+  .overview {
+    flex: 5;
+    font-size: 15px;
+  }
+}
