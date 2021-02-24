@@ -31,6 +31,4 @@ You will also see any lint errors in the console.
 * Make an autocomplete input component, in order to get title suggestions while the user write overviews
 * We can have in account another fields on the input like movie titles or authors.
 
-- Add [husky](https://www.npmjs.com/package/husky) in order to keep the consistency across all the code base
-
 - Add unit testing for all components and functions
